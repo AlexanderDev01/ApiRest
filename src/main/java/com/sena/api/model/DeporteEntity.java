@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 public class DeporteEntity {
     
     @Id
+    @Column(name = "id_deportes")
     Integer idDeporte;
     @Column(name = "nombre_deportes")
     String nombreDeporte;
