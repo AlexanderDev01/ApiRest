@@ -20,4 +20,12 @@ public class DeporteService{
     public List<DeporteEntity> findAll() {
         return deporteRepository.findAll();
     }
+
+    public List<DeporteEntity> findByIdDeporte(Integer idDeporte) {
+        return deporteRepository.findByIdDeporte(idDeporte);
+    }
+
+    public DeporteEntity saveDeporte(DeporteEntity deporteEntity) {
+        return deporteRepository.save(deporteEntity);
+    }
 }
